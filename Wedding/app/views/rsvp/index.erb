@@ -8,6 +8,10 @@
       $(document).ready(function(){
           $("#target").blur(function(){
                name = $(this).val();
+                if (name < 2){
+                    $("#myspan").hide()
+                    $(".cloned").remove();
+                }
                 e = $("#myspan")
                   for (i = 2; i < name; i++) {
                             e.clone()
@@ -43,7 +47,6 @@
 <input id="target" type="text">
 <p>How many people in your party?</p>
 <form id="myform">
-  <input type="checkbox" name="check1" value="check1">Im flying stag
 <br><br>
 
 <%= text_field_tag :name %> Your Name <br>
