@@ -64,7 +64,7 @@
       <file leaf-file-name="index.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="41" selection-start="850" selection-end="850" vertical-scroll-proportion="0.51035506" vertical-offset="75" max-vertical-offset="855">
+            <state line="26" column="34" selection-start="744" selection-end="744" vertical-scroll-proportion="0.46597633" vertical-offset="75" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -499,7 +499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="41" selection-start="850" selection-end="850" vertical-scroll-proportion="0.51035506" vertical-offset="75" max-vertical-offset="855">
+        <state line="26" column="34" selection-start="744" selection-end="744" vertical-scroll-proportion="0.46597633" vertical-offset="75" max-vertical-offset="855">
           <folding />
         </state>
       </provider>
