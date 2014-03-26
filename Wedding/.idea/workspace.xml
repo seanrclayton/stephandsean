@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="259723cb-e4c1-4fa1-aa04-13d1ff2f5e8c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rsvp/index.erb" afterPath="$PROJECT_DIR$/app/views/rsvp/index.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +64,7 @@
       <file leaf-file-name="index.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="18" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.7337278" vertical-offset="224" max-vertical-offset="900">
+            <state line="26" column="32" selection-start="802" selection-end="802" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="915">
               <folding />
             </state>
           </provider>
@@ -414,7 +413,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/views/rsvp/index.erb</url>
-          <line>52</line>
+          <line>53</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />
@@ -500,7 +499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="18" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.7337278" vertical-offset="224" max-vertical-offset="900">
+        <state line="26" column="32" selection-start="802" selection-end="802" vertical-scroll-proportion="0.5769231" vertical-offset="0" max-vertical-offset="915">
           <folding />
         </state>
       </provider>

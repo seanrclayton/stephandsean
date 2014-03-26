@@ -10,7 +10,7 @@
                name = $(this).val();
                 if (name < 2){
                     $("#myspan").hide()
-                    $(".cloned").remove();
+                    $(".cloned").hide();
                 }
                 e = $("#myspan")
                   for (i = 2; i < name; i++) {
@@ -24,6 +24,7 @@
 
           $("#target").click(function(){
               $(".cloned").remove();
+              $("#myspan").show()
 
             });
 
