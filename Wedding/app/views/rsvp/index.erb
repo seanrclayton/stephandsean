@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <script>
+
+      $(document).ready(function(){
+          $("#target").blur(function(){
+              var name = $("#target").val();
+
+                  for (var i = 1; i < name; i++) {
+                    $("#myspan").clone().appendTo("#myspan")
+
+                  }
+          });
+
+          $('#myform :checkbox').click(function() {
+              var $this = $(this);
+              // $this will contain a reference to the checkbox
+              if ($this.is(':checked')) {
+                  $("#myspan").hide()
+              } else {
+                  $("#myspan").show()
+              }
+          });
+
+      });
+
+  </script>
+</head>
+<body>
+
+<input id="target" type="text">
+<p>How many people will be joining you?</p>
+<form id="myform">
+  <input type="checkbox" name="check1" value="check1">Im flying stag
+<br><br>
+
+<%= text_field_tag :name %> first name <br>
+<span id="myspan"><%= text_field_tag :name %> guests name<br></span>
+</body>
+</html>
