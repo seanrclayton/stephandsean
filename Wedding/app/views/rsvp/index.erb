@@ -7,15 +7,19 @@
 
       $(document).ready(function(){
           $("#target").blur(function(){
-              var name = $("#target").val();
+               name = $(this).val();
+                e = $("#myspan")
+                  for (i = 1; i < name; i++) {
+                            e.clone()
+                                .addClass("cloned")
+                                .removeAttr("id")
+                                .insertAfter("#myspan")
 
-                  for (var i = 1; i < name; i++) {
-                    $("#myspan").clone().appendTo("#myspan")
                    }
           });
 
           $("#target").click(function(){
-              ("#myspan").remove();
+              $(".cloned").remove();
 
             });
 
