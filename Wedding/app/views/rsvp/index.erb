@@ -9,7 +9,7 @@
           $("#target").blur(function(){
                name = $(this).val();
                 e = $("#myspan")
-                  for (i = 1; i < name; i++) {
+                  for (i = 2; i < name; i++) {
                             e.clone()
                                 .addClass("cloned")
                                 .removeAttr("id")
@@ -40,12 +40,12 @@
 <body>
 
 <input id="target" type="text">
-<p>How many people will be joining you?</p>
+<p>How many people in your party?</p>
 <form id="myform">
   <input type="checkbox" name="check1" value="check1">Im flying stag
 <br><br>
 
-<%= text_field_tag :name %> first name <br>
-<span id="myspan"><%= text_field_tag :name %> guests name<br></span>
+<%= text_field_tag :name %> Your Name <br>
+<span id="myspan"><%= text_field_tag :name %> Guests / Child's name<br></span>
 </body>
 </html>
