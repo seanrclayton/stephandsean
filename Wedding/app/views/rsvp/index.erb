@@ -11,9 +11,13 @@
 
                   for (var i = 1; i < name; i++) {
                     $("#myspan").clone().appendTo("#myspan")
-
-                  }
+                   }
           });
+
+          $("#target").click(function(){
+              ("#myspan").remove();
+
+            });
 
           $('#myform :checkbox').click(function() {
               var $this = $(this);

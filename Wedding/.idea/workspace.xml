@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="259723cb-e4c1-4fa1-aa04-13d1ff2f5e8c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/index/index.erb" afterPath="$PROJECT_DIR$/app/views/index/index.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rsvp/index.erb" afterPath="$PROJECT_DIR$/app/views/rsvp/index.erb" />
     </list>
     <ignored path="Wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +64,7 @@
       <file leaf-file-name="index.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="31" selection-start="340" selection-end="340" vertical-scroll-proportion="0.2662722" vertical-offset="0" max-vertical-offset="720">
+            <state line="40" column="18" selection-start="976" selection-end="976" vertical-scroll-proportion="0.88757396" vertical-offset="0" max-vertical-offset="780">
               <folding />
             </state>
           </provider>
@@ -414,7 +413,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/views/rsvp/index.erb</url>
-          <line>40</line>
+          <line>44</line>
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="2" />
@@ -500,7 +499,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="31" selection-start="340" selection-end="340" vertical-scroll-proportion="0.2662722" vertical-offset="0" max-vertical-offset="720">
+        <state line="40" column="18" selection-start="976" selection-end="976" vertical-scroll-proportion="0.88757396" vertical-offset="0" max-vertical-offset="780">
           <folding />
         </state>
       </provider>
