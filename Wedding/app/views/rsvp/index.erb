@@ -3,14 +3,15 @@
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
   </script>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
   <script>
 
       $(document).ready(function(){
           $("#target").blur(function(){
                name = $(this).val();
                 if (name < 2){
-                    $("#myspan").hide()
-                    $(".cloned").hide();
+                    $("#myspan").hide('slow')
+                    $(".cloned").hide('slow');
                 }
                 e = $("#myspan")
                   for (i = 2; i < name; i++) {
@@ -18,13 +19,14 @@
                                 .addClass("cloned")
                                 .removeAttr("id")
                                 .insertAfter("#myspan")
+                                .fadeIn('slow')
 
                    }
           });
 
           $("#target").click(function(){
-              $(".cloned").remove();
-              $("#myspan").show()
+              $(".cloned").remove('slow');
+              $("#myspan").show('slow')
 
             });
 
@@ -32,10 +34,10 @@
               var $this = $(this);
               // $this will contain a reference to the checkbox
               if ($this.is(':checked')) {
-                  $("#myspan").hide()
-                  $(".cloned").remove();
+                  $("#myspan").hide("slow")
+                  $(".cloned").remove("slow");
               } else {
-                  $("#myspan").show()
+                  $("#myspan").show("slow")
               }
           });
 
@@ -44,13 +46,19 @@
   </script>
 </head>
 <body>
+<form class="pure-form">
 
-<input id="target" type="text">
-<p>How many people in your party?</p>
-<form id="myform">
+  <legend> How many people in your party?</legend>
+<%= text_field_tag :target %>
+
 <br><br>
-
-<%= text_field_tag :name %> Your Name <br>
-<span id="myspan"><%= text_field_tag :name %> Guests / Child's name<br></span>
+  <%= form_tag("#", method: "get") do %>
+  <legend> Your Name?</legend>
+      <%= text_field_tag(:name) %>  <br>
+<span id="myspan" style="display: block;">  <legend> Guests / Child's name?</legend> <%= text_field_tag :name %></span>
+      <br><br>
+      <%= submit_tag("That should do it") %>
+      <%end%>
 </body>
+</form>
 </html>
