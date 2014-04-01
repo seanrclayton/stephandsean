@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="259723cb-e4c1-4fa1-aa04-13d1ff2f5e8c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rsvp/index.erb" afterPath="$PROJECT_DIR$/app/views/rsvp/index.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/rsvp_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/rsvp_controller.rb" />
     </list>
     <ignored path="Wedding.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="17" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.7777778" vertical-offset="285" max-vertical-offset="1035">
+            <state line="29" column="0" selection-start="952" selection-end="952" vertical-scroll-proportion="-4.75" vertical-offset="321" max-vertical-offset="1095">
               <folding>
                 <element signature="n#style#0;n#span#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -72,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rsvp_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="rsvp_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/rsvp_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="180">
+            <state line="13" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.25896415" vertical-offset="0" max-vertical-offset="753">
               <folding />
             </state>
           </provider>
@@ -96,15 +97,15 @@
       <list>
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/controllers/rsvp_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/index/index.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/rsvp/index.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/rsvp_controller.rb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
+    <option name="x" value="1391" />
     <option name="y" value="562" />
     <option name="width" value="1440" />
     <option name="height" value="824" />
@@ -265,6 +266,26 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
@@ -371,7 +392,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="562" width="1440" height="824" extended-state="6" />
+    <frame x="1391" y="562" width="1440" height="824" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -412,12 +433,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/views/rsvp/index.erb</url>
-          <line>57</line>
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
   </component>
@@ -494,19 +509,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/rsvp_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="58" selection-end="58" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/rsvp/index.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="17" selection-start="1530" selection-end="1530" vertical-scroll-proportion="0.7777778" vertical-offset="285" max-vertical-offset="1035">
+        <state line="29" column="0" selection-start="952" selection-end="952" vertical-scroll-proportion="-4.75" vertical-offset="321" max-vertical-offset="1095">
           <folding>
             <element signature="n#style#0;n#span#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/rsvp_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="181" selection-end="181" vertical-scroll-proportion="0.25896415" vertical-offset="0" max-vertical-offset="753">
+          <folding />
         </state>
       </provider>
     </entry>
