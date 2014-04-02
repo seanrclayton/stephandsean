@@ -46,13 +46,12 @@
   </script>
 </head>
 <body>
-<form class="pure-form">
-
+  <%= form_tag("#", method: "post", class:"pure-form") do %>
   <legend> How many people in your party?</legend>
 <%= text_field_tag :target %>
 
 <br><br>
-  <%= form_tag("#", method: "post") do %>
+
   <legend> Your Name?</legend>
       <%= text_field_tag(:name, params[:rsvper]) %>  <br>
       <legend> Your Number?</legend>
