@@ -52,7 +52,7 @@
 <%= text_field_tag :target %>
 
 <br><br>
-  <%= form_tag("#", method: "get") do %>
+  <%= form_tag("#", method: "post") do %>
   <legend> Your Name?</legend>
       <%= text_field_tag(:name, params[:rsvper]) %>  <br>
       <legend> Your Number?</legend>
@@ -64,5 +64,4 @@
       <%= submit_tag("That should do it") %>
       <%end%>
 </body>
-</form>
 </html>
