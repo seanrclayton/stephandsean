@@ -6,7 +6,7 @@ class RsvpController < ApplicationController
 
   def new
 
-    @name = params['rsvper']
+    @name = params['name']
     @email = params['email']
     @number = params['number']
     @guest = params['guest']
