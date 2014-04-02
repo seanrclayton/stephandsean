@@ -10,7 +10,8 @@ class RsvpController < ApplicationController
     @email = params['email']
     @number = params['number']
     @guest = params['guest']
+    @guest_joined = @guest.join(",")
    
-    object = RSVP.create(:name => @name, :email => @email, :number => @number, :guest => @guest)
+    object = Rsvp.create(:rsvper => @name, :email => @email, :number => @number, :guests => @guest_joined)
   end
 end
