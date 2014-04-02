@@ -47,19 +47,23 @@
 </head>
 <body>
   <%= form_tag("#", method: "post", class:"pure-form") do %>
-  <legend> How many people in your party?</legend>
+  <legend> Number of people in your party:</legend>
 <%= text_field_tag :target %>
 
 <br><br>
 
-  <legend> Your Name?</legend>
+  <legend> Your Name:</legend>
       <%= text_field_tag(:name, params[:name]) %>  <br>
-      <legend> Your Number?</legend>
+  <legend> Your Number:</legend>
       <%= text_field_tag(:number) %>  <br>
-      <legend> Your Email?</legend>
+  <legend> Your Email:</legend>
       <%= email_field_tag(:email, params[:email]) %>  <br>
 <span id="myspan" style="display: block;">  <legend> Guests / Child's name?</legend> <%= text_field_tag('guest[]', params[:guest]) %></span>
-      <br><br>
+     
+  <br><br>
+  <legend> Additional Comments:</legend>
+  <%= text_area_tag(:comments, params[:comments],rows: 5, cols: 50) %>
+<br>
       <%= submit_tag("That should do it") %>
       <%end%>
 </body>
