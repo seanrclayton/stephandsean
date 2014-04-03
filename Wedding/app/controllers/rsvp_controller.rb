@@ -15,7 +15,7 @@ class RsvpController < ApplicationController
     @object = Rsvp.create(:rsvper => @name, :email => @email, :number => @number, :guests => @guest_joined, :comments => @comments)
    
         if @object.errors.any?
-          flash.alert = "Your Name must be more than 2 Characters"
+          flash.alert = @object.errors.full_messages.join("<br/>").html_safe
           render  :action => 'index'
         else
     redirect_to thankyou_path(:name => @name)
