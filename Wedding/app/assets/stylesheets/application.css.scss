@@ -13,7 +13,7 @@
  */
 
 .navbar{
-  background-image: image-url("leaf.png");
+  background-image: image-url("leaf.png") !important;
   background-size:80px 60px;
   height:60px
 }
