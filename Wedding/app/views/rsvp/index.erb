@@ -46,7 +46,29 @@
   </script>
 </head>
 <body>
-  <%= form_tag("#", method: "post", class:"pure-form") do %>
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <h3>  Steph and Sean Wedding </h3>
+  </nav>
+  <ul class="nav navbar-nav navbar-right">
+<h4> Oct. 19th 2014 </h4>
+  </ul>
+
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Story</a></li>
+            <li><a href="/pictures">Photos</a></li>
+            <li><a href="#">RSVP</a></li>
+            <li><a href="#">Wedding Weekend</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Things to do in Austin</a></li>
+  </ul>
+        </div>
+
+     <div class="form-group">
+        <%= form_tag("#", method: "post", class:"pure-form") do %>
   <legend> Number of people in your party:</legend>
 <%= text_field_tag :target %>
 
@@ -63,8 +85,11 @@
   <br><br>
   <legend> Additional Comments:</legend>
   <%= text_area_tag(:comments, params[:comments],rows: 5, cols: 50) %>
-<br>
-      <%= submit_tag("That should do it") %>
+<br><br><br>
+  <%= submit_tag("Submit", class:"pure-button pure-input-1-2") %>
       <%end%>
-</body>
+  </div>
+    </div>
+  </div>
+    </body>
 </html>

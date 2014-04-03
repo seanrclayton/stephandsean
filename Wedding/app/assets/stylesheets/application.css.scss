@@ -11,3 +11,30 @@
  *= require_self
  *= require_tree .
  */
+
+.navbar{
+  background-image: image-url("leaf.png");
+  background-size:80px 60px;
+  height:60px
+}
+.nav {
+padding-top:15px !important;
+}
+
+form.pure-form{
+display: inline-block !important;
+}
+
+.pure-button{
+font-family: "Arial Black", Gadget, sans-serif !important;
+font-size: 100%;
+padding: .5em 1em;
+color: #E11;
+color: white !important;
+border: 1px solid #999;
+border: 0 rgba(0,0,0,0);
+background-color: #0078e7 !important;
+text-decoration: none;
+border-radius: 2px;
+width: 120px !important;
+}
