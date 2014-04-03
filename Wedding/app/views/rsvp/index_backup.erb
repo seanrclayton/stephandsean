@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+  </script>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+  <script>
+
+      $(document).ready(function(){
+          $("#target").blur(function(){
+               name = $(this).val();
+                if (name < 2){
+                    $("#myspan").hide('slow')
+                    $(".cloned").hide('slow');
+                }
+                e = $("#myspan")
+                  for (i = 2; i < name; i++) {
+                            e.clone()
+                                .addClass("cloned")
+                                .removeAttr("id")
+                                .insertAfter("#myspan")
+                                .fadeIn('slow')
+
+                   }
+          });
+
+          $("#target").click(function(){
+              $(".cloned").remove();
+              $("#myspan").show('slow')
+
+            });
+
+          $('#myform :checkbox').click(function() {
+              var $this = $(this);
+              // $this will contain a reference to the checkbox
+              if ($this.is(':checked')) {
+                  $("#myspan").hide("slow")
+                  $(".cloned").remove("slow");
+              } else {
+                  $("#myspan").show("slow")
+              }
+          });
+
+      });
+
+  </script>
+</head>
+<body>
+  
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <h3>  Steph and Sean Wedding </h3>
+  </nav>
+  <ul class="nav navbar-nav navbar-right">
+<h4> Oct. 19th 2014 </h4>
+  </ul>
+
+  <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><a href="#">Story</a></li>
+            <li><a href="/pictures">Photos</a></li>
+            <li><a href="#">RSVP</a></li>
+            <li><a href="#">Wedding Weekend</a></li>
+            <li><a href="#">Registry</a></li>
+            <li><a href="#">Things to do in Austin</a></li>
+  </ul>
+        </div>
+
+     <div class="form-group">
+        <%= form_tag("#", method: "post", class:"pure-form") do %>
+  <legend> Number of people in your party:</legend>
+<%= text_field_tag :target %>
+
+<br><br>
+
+  <legend> Your Name:</legend>
+      <%= text_field_tag(:name, params[:name]) %>  <br>
+  <legend> Your Number:</legend>
+      <%= text_field_tag(:number) %>  <br>
+  <legend> Your Email:</legend>
+      <%= email_field_tag(:email, params[:email]) %>  <br>
+  <span id="myspan" style="display: block;">  <legend> Guests / Child's name:</legend> <%= text_field_tag('guest[]', params[:guest]) %></span>
+     
+  <br><br>
+  <legend> Additional Comments:</legend>
+  <%= text_area_tag(:comments, params[:comments],rows: 5, cols: 50) %>
+<br><br><br>
+  <%= submit_tag("Submit", class:"pure-button pure-input-1-2") %>
+      <%end%>
+  </div>
+    </div>
+  </div>
+    </body>
+</html>
