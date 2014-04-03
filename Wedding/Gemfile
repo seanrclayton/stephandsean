@@ -38,6 +38,8 @@ group :development do
 end
 
 gem 'angularjs-rails'
+
+gem 'browser'
  
 
 # Use ActiveModel has_secure_password

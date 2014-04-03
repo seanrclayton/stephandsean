@@ -4,6 +4,7 @@ Wedding::Application.routes.draw do
   get 'rsvp' => 'rsvp#index'
   get 'thankyou' => 'rsvp#thankyou'
   get 'whoscoming' => 'whoscoming#index'
+  get 'party' => 'party#party'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -11,6 +12,7 @@ Wedding::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'index#index'
   post '/rsvp' => 'rsvp#new'
+ 
 
 
   # Example of regular route:
