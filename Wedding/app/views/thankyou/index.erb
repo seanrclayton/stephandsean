@@ -1,2 +1,18 @@
+<html>
+  <div class="container-full">
+<body>
 <% @name = Rsvp.last.rsvper %>
+<% @guests = Rsvp.last.guests.split(',')%>
+  <% @guests.last.insert(0, ' and ')%>
+  <% @guests.join(",")%>
+
+
+  <%if Rsvp.last.guests == nil%>
 Thanks <%= @name %> We look forward to seeing you!
+  </div>
+    <%else%>
+    Thanks <%= @name %> We look forward to seeing you <%= @guests.join(", ") %>
+<%end%>
+    
+  </body>
+  </html>

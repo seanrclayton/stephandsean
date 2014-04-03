@@ -1,3 +1,19 @@
 // Place all the styles related to the thankyou controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// Place all the styles related to the thankyou controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+/* Custom container */
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  color:#000 !important;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-size:20px;
+  padding-top:20px;
+}
