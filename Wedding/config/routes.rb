@@ -2,7 +2,7 @@ Wedding::Application.routes.draw do
   get 'pictures' => 'pictures#index'
 
   get 'rsvp' => 'rsvp#index'
-  get 'thankyou' => 'thankyou#index'
+  get 'thankyou' => 'rsvp#thankyou'
   get 'whoscoming' => 'whoscoming#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
