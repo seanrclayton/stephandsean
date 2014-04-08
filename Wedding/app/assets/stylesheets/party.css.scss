@@ -2,32 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .container-full-party {
+ font-family: 'Tangerine', serif;
   margin: 0 auto;
   width: 100%;
   height: 350px;
   color:#000 !important;
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-  font-size:20px;
+  font-size:30px;
   padding-top:20px;
   display:block !important;
   
 }
 
-.container-full-party-about {
-  margin: 0 auto;
-  width: 100%;
-  height: 350px;
-  color:#000 !important;
-  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-  font-size:20px;
-  padding-top:20px;
-  display:block !important;
+.about {
+  font-family: 'Mr De Haviland', cursive;
+  font-size:15px;
+
 }
 
   
 #spacing2{
     padding-left:20px;
   }
+
 .nav{
   padding-top:100px !important;
+}
+
+.nav-sidebar{
+  font-size:14px;
+  font-family: 'Domine', serif;
+  color:black !important;
+}
+
+a{
+  color:black;
+}
+
+a:hover{
+ color:#2E0854;
 }

@@ -4,3 +4,22 @@
 h3{
   font-size:20px !important;
 }
+
+#background-container { 
+   display:table;
+    width:100%;
+    border-collapse:collapse;
+    box-sizing:border-box;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ 
+}
+
+.pure-form legend{
+font-family: 'Tangerine', serif;
+color:#000 !important;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-size:30px;
+}
