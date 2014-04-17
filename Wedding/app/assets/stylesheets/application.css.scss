@@ -75,9 +75,9 @@ div.collapse.navbar-collapse{
 .title{
   padding-left:200px;
   background-color:#EEE !important;
- background-image: image-url('leaves.png'), image-url('simple_bird.png');
- background-position: 7.5% 200%, 56%,10000%;
-  background-size:100px 80px, 140px, 90px;
+ background-image: /* image-url('leaves.png'), */image-url('simple_bird.png');
+ background-position: 7.5% 200%;/*, 56%,10000%; */
+  background-size:/*100px 80px,*/ 140px, 90px;
   background-repeat:no-repeat;
 
 }
