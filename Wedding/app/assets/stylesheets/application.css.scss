@@ -22,7 +22,7 @@ h4{
   font-size:50px;
   /*font: 400 50px/1.5 'Glam', Helvetica, sans-serif; */
   font-family: 'Glam' !important;
-  color: #2E0854;;
+  color: #2E0854;
   text-shadow: 3px 3px 0px rgba(0,0,0,0.1), 7px 7px 0px rgba(0,0,0,0.05);
    border-top: 1px solid #000 !important;
   padding-top:18px;
@@ -81,6 +81,12 @@ div.collapse.navbar-collapse{
   background-repeat:no-repeat;
 
 }
+
+.title a:hover {
+   color: #2E0854 !important;
+  text-decoration: none !important;
+}
+
 .spacer{
   padding-bottom:10px;
   margin-bottom:5px;
