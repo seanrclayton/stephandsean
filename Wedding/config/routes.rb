@@ -5,6 +5,7 @@ Wedding::Application.routes.draw do
   get 'thankyou' => 'rsvp#thankyou'
   get 'whoscoming' => 'whoscoming#index'
   get 'party' => 'party#party'
+  get 'registry' => 'registry#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
