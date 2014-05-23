@@ -1,41 +1,42 @@
-<html>
-<body>
-  
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-    <h3>  Steph and Sean Wedding </h3>
-  </nav>
-  <ul class="nav navbar-nav navbar-right">
-<h4> Oct. 19th 2014 </h4>
-  </ul>
-
-  <div class="container-fluid">
+<div id="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Story</a></li>
+              <h4> Oct. 19th 2014 </h4>
+            <li class="active"><a href="/story">Story</a></li>
+            <li><a href="/party">About our Wedding Party</a></li>
             <li><a href="/pictures">Photos</a></li>
-            <li><a href="#">RSVP</a></li>
-            <li><a href="#">Wedding Weekend</a></li>
-            <li><a href="#">Registry</a></li>
-            <li><a href="#">Things to do in Austin</a></li>
-  </ul>
+            <li><a href="/rsvp">RSVP</a></li>
+            <li><a class="weekend" href="/weekend">Wedding Weekend</a></li>
+                <span class="something">
+                
+                  <li><a href="/events">Pre Wedding Events</a></li>
+                  <li><a href="/dayof">Day of Schedule</a></li>
+                  <li><a href="/parking">Parking</a></li>
+                  <li><a href="/hotel">Hotel info</a></li>          
+                  </span>
+            <li><a href="/registry">Registry</a></li>
+            <li><a href="/todo">Things to do in Austin</a></li>
+          
+            
+          </ul>
         </div>
-    </div>
-  </div>
-  </div>
-  <div class="container-full">
+ <div class="content">
+   <br><br><br>
+   <br><br><br>
+   
   
 <% @name = Rsvp.last.rsvper %>
 <% @guests = Rsvp.last.guests.split(',')%>
   <% @guests.last.insert(0, ' and ')%>
   <% @guests.join(",")%>
 
-
+<h2>
   <%if Rsvp.last.guests == nil%>
-Thanks <%= @name %>, We look forward to seeing you!
+Thanks, <%= @name %>! We look forward to seeing you!
   </div>
     <%else%>
-    Thanks <%= @name %>, We look forward to seeing you <%= @guests.join(", ") %>
+    Thanks, <%= @name %>! We look forward to seeing you <%= @guests.join(", ") %>
 <%end%>
-    
-  </html>
+   </h2>
+   

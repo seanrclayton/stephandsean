@@ -1,13 +1,18 @@
 Wedding::Application.routes.draw do
   get 'pictures' => 'pictures#index'
 
-  get 'rsvp' => 'rsvp#index'
-  get 'thankyou' => 'rsvp#thankyou'
+  get 'rsvp'       => 'rsvp#index'
+  get 'thankyou'   => 'rsvp#thankyou'
   get 'whoscoming' => 'whoscoming#index'
-  get 'party' => 'party#party'
-  get 'registry' => 'registry#index'
-  get 'weekend' => 'weekend#index'
-  get 'todo'  => 'todo#index'
+  get 'party'      => 'party#party'
+  get 'registry'   => 'registry#index'
+  get 'weekend'    => 'weekend#index'
+  get 'todo'       => 'todo#index'
+  get 'story'      => 'story#story'
+  get 'events'     => 'weekend#schedule'
+  get 'hotel'      => 'hotel#hotel'
+  get 'dayof'      => 'dayof#dayof'
+  get 'parking'    => 'parking#parking'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

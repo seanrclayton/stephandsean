@@ -40,6 +40,10 @@ end
 gem 'angularjs-rails'
 
 gem 'browser'
+
+gem 'mini_magick', '3.5.0'
+
+gem 'carrierwave'
  
 
 # Use ActiveModel has_secure_password

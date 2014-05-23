@@ -97,3 +97,23 @@ div.collapse.navbar-collapse{
 font-family: 'Glam';
 src: url('/assets/Glam.ttf') format('truetype')
 }
+
+.something {
+    display:none;
+  padding-left:25px;
+  
+}
+.something.a:hover{
+  
+  text-decoration:none;
+ }
+
+#container-fluid > div > div.col-sm-3.col-md-2.sidebar > ul > span > li > a:hover{
+  text-decoration:none;
+}
+
+.heading{
+  font-size:18px;
+  font-weight:bold;
+}
+

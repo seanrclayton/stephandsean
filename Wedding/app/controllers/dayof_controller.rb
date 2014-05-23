@@ -1,0 +1,2 @@
+class DayofController < ApplicationController
+end

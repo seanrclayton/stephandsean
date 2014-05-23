@@ -11,6 +11,29 @@
    <%= stylesheet_link_tag 'application', "http://fonts.googleapis.com/css?family=Tangerine"%>
     <%= stylesheet_link_tag 'application', "http://fonts.googleapis.com/css?family==Mr+De+Haviland"%>
     <%= stylesheet_link_tag 'application', "http://fonts.googleapis.com/css?family=Domine"%> 
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+      <script>
+$(document).ready(function(){
+     $('.weekend').hover(function(){
+         $('.something').css("display","block");
+     });
+  
+  $('.something').mouseleave(function(){
+    $('.something').css("display","none");
+    });
+  
+  $('.something').mouseenter(function(){
+    $('.something').css("display","block");
+    });
+  
+  $('.weekend').mouseleave(function(){
+    $('.something').css("display","none");
+    });
+  
+});
+    </script>
+
     
 
 

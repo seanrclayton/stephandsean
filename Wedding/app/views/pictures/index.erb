@@ -1,20 +1,37 @@
 <head>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
 <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
-</head>
-<div class="container-fluid">
+  </head>
+
+<style>
+img{
+  display: inherit;
+}
+.img-responsive{
+  display: inherit !important;
+}
+</style>
+
+  <div id="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <h4> Oct. 19th 2014 </h4>
-            <li class="active"><a href="#">Story</a></li>
+              <h4> Oct. 19th 2014 </h4>
+            <li class="active"><a href="/story">Story</a></li>
             <li><a href="/party">About our Wedding Party</a></li>
             <li><a href="/pictures">Photos</a></li>
             <li><a href="/rsvp">RSVP</a></li>
-            <li><a href="#">Wedding Weekend</a></li>
-            <li><a href="#">Registry</a></li>
-            <li><a href="#">Things to do in Austin</a></li>
+            <li><a class="weekend" href="/weekend">Wedding Weekend</a></li>
+                <span class="something">
+                
+                  <li><a href="/events">Pre Wedding Events</a></li>
+                  <li><a href="/dayof">Day of Schedule</a></li>
+                  <li><a href="/parking">Parking</a></li>
+                  <li><a href="/hotel">Hotel info</a></li>          
+                  </span>
+            <li><a href="/registry">Registry</a></li>
+            <li><a href="/todo">Things to do in Austin</a></li>
+          
             
           </ul>
         </div>
@@ -54,24 +71,26 @@
     </div>
 </div>
 
-
+<br><br><br><br>
 <div id="links">
-  <a href="/assets/baseball.jpg" title="Banana" data-gallery>
-         <%= image_tag("baseball.jpg", :alt => "rss feed") %>
+  <a href="/assets/baseball.jpg"  data-gallery>
+    <%= image_tag("baseball.jpg",  size: "160x100", class: "slideshow", :alt => "rss feed") %>
     </a>
-  <a href="/assets/1.jpg" title="Banana" data-gallery>
-         <%= image_tag("1.jpg", :alt => "rss feed") %>
+  <a href="/assets/1.jpg"  data-gallery>
+    <%= image_tag("1.jpg", size: "160x100", class: "slideshow", :alt => "rss feed") %>
     </a>
   <a href="/assets/2.jpg" title="2" data-gallery>
-         <%= image_tag("baseball.jpg", :alt => "rss feed") %>
+    <%= image_tag("2.jpg", size: "160x100", class: "slideshow", :alt => "rss feed") %>
     </a>
 </div>
+      
 
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
 <script src="js/bootstrap-image-gallery.min.js"></script>
-
+  <br>
+       
   </div>
 </div>
