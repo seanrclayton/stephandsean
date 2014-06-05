@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140402195230) do
+ActiveRecord::Schema.define(version: 20140605010626) do
 
   create_table "rsvps", force: true do |t|
     t.string   "rsvper"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20140402195230) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.text     "comments"
+    t.string   "attending"
   end
 
 end
