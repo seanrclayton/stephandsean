@@ -27,16 +27,17 @@
    
   
 <% @name = Rsvp.last.rsvper %>
+   <% if Rsvp.last.guests.length < 2 %>
+  <h2> Thanks, <%= @name %>! We look forward to seeing you! <h2>
+   <%else%>
 <% @guests = Rsvp.last.guests.split(',')%>
   <% @guests.last.insert(0, ' and ')%>
   <% @guests.join(",")%>
 
-<h2>
-  <%if Rsvp.last.guests == nil%>
-Thanks, <%= @name %>! We look forward to seeing you!
-  </div>
-    <%else%>
-    Thanks, <%= @name %>! We look forward to seeing you <%= @guests.join(", ") %>
+
+ <h2>
+
+     Thanks, <%= @name %>! We look forward to seeing you <%= @guests.join(", ") %>!
 <%end%>
    </h2>
    
