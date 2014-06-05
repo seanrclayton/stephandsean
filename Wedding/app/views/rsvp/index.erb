@@ -80,14 +80,20 @@
      <div class="form-group">
         <%= form_tag("#", method: "post", class:"pure-form") do %>
       
+  <legend> Will we be enjoying your presence?</legend>
+       <%= radio_button_tag(:attending, "yes") %>
+       <%= label_tag(:attending, "Joyfully Accept") %>
+       <%= radio_button_tag(:attending, "no no no") %>
+       <%= label_tag(:attending, "Regretfully Decline") %><br><br>
        
   <legend> Number of people in your party:</legend>
 <%= text_field_tag :target %>
 
 <br><br>
 
-  <legend> Will we be enjoying your presence?</legend>
-  <%= radio_button_tag(name, value, checked = false, options = {}) =>
+
+
+
 
        
   <legend> Your Name:</legend>

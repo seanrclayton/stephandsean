@@ -3,6 +3,7 @@ Who's Coming?<br><br>
 <%@list = Rsvp.all%>
 <% @list.each do |x| %>
   Name : <%= x.rsvper %> <br><br>
+  Attending : <%= x.attending %> <br><br>
   Number : <%= x.number %> <br><br>
 
   Email: <%= x.email %> <br><br>
