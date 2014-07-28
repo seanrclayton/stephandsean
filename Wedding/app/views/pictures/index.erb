@@ -72,7 +72,15 @@ img{
 </div>
 
 <br><br><br><br>
-<div id="links">
+
+        <div id="links">
+  
+          <% @images.each do |image|%>
+        <%image = image.gsub("app/assets/images/","")%>
+          <%=link_to(image_tag(image, size:"160x100", class: "slideshow"),"/assets/#{image}", "data-gallery" => "gallery") %></a>
+        <%end%>
+          
+          
   <a href="/assets/baseball.jpg"  data-gallery>
     <%= image_tag("baseball.jpg",  size: "160x100", class: "slideshow", :alt => "rss feed") %>
     </a>

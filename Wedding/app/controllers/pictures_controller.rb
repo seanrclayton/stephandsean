@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
-  def index 
+  def index
+    @images = Dir.glob("app/assets/images/slideshow/*.jpg")  
   end
 end
